@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: rgb(51, 51, 51);
+}
+
+.content {
+  p {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+
+.flex-results {
+  display: flex;
+  justify-content: center;
+
+  #percent {
+    color: rgb(51, 51, 51);
+    display: inline;
+    // margin-left: 15px;
+  }
+
+  h1#mistakes {
+    color: rgb(255, 0, 0);
+    display: inline;
+  }
+}
+
+h1.time {
+  margin-left: 10px;
+}
+
+.area {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  textarea.form-control {
+    min-width: 600px;
+    min-height: 380px;
+    max-width: 600px;
+    max-height: 380px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 22px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    p {
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      font-size: 15px !important;
+      font-weight: 500 !important;
+      margin-top: 30px !important;
+    }
+  }
+  .area {
+    textarea {
+      min-width: 280px !important;
+      min-height: 180px !important;
+      max-width: 280px !important;
+      max-height: 280px !important;
+      letter-spacing: 1px;
+      word-spacing: 1px !important;
+      font-size: 15px !important;
+      outline: none;
+      border: 1px solid;
+      border-radius: 5px;
+    }
+  }
+
+  .time {
+    font-size: 15px;
+  }
+
+  .flex-results {
+    h1#mistakes {
+      font-size: 16px;
+    }
+
+    h1#percent {
+      font-size: 16px;
+    }
+  }
+}
+
+.counter {
+  margin-top: 100px;
+}
+
+#err {
+  font-size: 150px;
+  letter-spacing: 20px;
+  text-align: center;
+}
+.display-none {
+  margin-top: 1rem;
+}
+
+button.btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.color-red {
+  color: rgb(253, 5, 5);
+}
+
+@media only screen and (min-width: 602px) and (max-width: 897px) {
+  .content > p {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin-top: 30px !important;
+  }
+
+  textarea.form-control {
+    min-width: 480px !important;
+    min-height: 280px !important;
+    max-width: 480px !important;
+    max-height: 280px !important;
+    letter-spacing: 1px !important;
+    word-spacing: 1px !important;
+    font-size: 17px !important;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  .time {
+    font-size: 15px;
+  }
+
+  .flex-results {
+    h1#mistakes {
+      font-size: 16px !important;
+    }
+
+    h1#percent {
+      font-size: 16px;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
